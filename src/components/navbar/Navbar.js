@@ -39,11 +39,11 @@ const Navbar = () => {
           <FiMenu />
         </span>
         {showMenu && (
-          <div className="w-[80%] h-screen overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide">
+          <div className="w-screen h-screen overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide">
             <div className="flex flex-col gap-8 py-2 relative">
               <div>
                 <h3>Jagadeesh Maripi</h3>
-                <p className="text-sm text-gray-400 mt-2">
+                <p className="text-sm text-gray-400 mt-2 mb-3">
                 "I am a passionate Full stack developer With a strong foundation in web development."
                 </p>
               </div>
