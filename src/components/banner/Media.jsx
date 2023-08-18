@@ -15,7 +15,7 @@ const Media = () => {
       <div className="flex flex-row xl:flex-row gap-6 lgl:gap-0 justify-between">
         <div>
           <h2 className="text-base uppercase font-titleFont mb-4">Stack</h2>
-          <div className="flex gap-4 grid sm:grid-cols-3 sml:grid-cols-4 md:grid-cols-6 lgl:grid-cols-10 gap-8">
+          <div className="flex gap-4 grid xs:grid-cols-3 sm:grid-cols-3 sml:grid-cols-4 md:grid-cols-6 lgl:grid-cols-10 gap-8">
             <span className="bannerIcon">
               <AiOutlineHtml5 className="w-12 h-12 text-orange-500"/>
             </span>
