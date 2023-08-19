@@ -24,7 +24,7 @@ const Footer = () => {
             </span></a>
           </li>
           <li>
-          <a href="jagadeeshm778@gmail.com">
+          <a href="mailto:jagadeeshm778@gmail.com">
           <span className="bannerIcon">
             <SiGmail />
           </span>

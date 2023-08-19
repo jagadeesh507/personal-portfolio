@@ -16,7 +16,7 @@ const Navbar = () => {
         <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
           {navLinksdata.map(({ _id, title, link }) => (
             <li
-              className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300"
+              className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-blue-500 duration-300"
               key={_id}
             >
               <Link
@@ -51,7 +51,7 @@ const Navbar = () => {
                 {navLinksdata.map((item) => (
                   <li
                     key={item._id}
-                    className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300"
+                    className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-blue-500 duration-300"
                   >
                     <Link
                       onClick={() => setShowMenu(false)}

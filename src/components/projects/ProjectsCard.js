@@ -1,18 +1,18 @@
-import React from 'react'
-import { BsGithub } from "react-icons/bs";
-import { FaGlobe } from "react-icons/fa";
+import React from 'react';
+import { BsGithub } from 'react-icons/bs';
+import { FaGlobe } from 'react-icons/fa';
 
-const ProjectsCard = ({ title,src,githubLink,websiteLink }) => {
+const ProjectsCard = ({ title, src, githubLink, websiteLink }) => {
   return (
-    <div className="w-full p-4 xl:px-12 h-auto xl:py-10 rounded-lg  flex flex-col bg-gradient-to-r from-#00263E to-[#202327] group hover:bg-gradient-to-b hover:from-gray-900 hover:gray-900 transition-colors duration-1000 ">
-      <div className="w-full h-[80%] border-red-500 overflow-hidden rounded-lg">
+    <div className="w-full p-4 xl:px-12 h-auto xl:py-10 rounded-lg border border-blue-400 flex flex-col group hover:border-blue-500 transition-colors duration-300">
+      <div className="w-full h-[80%] overflow-hidden rounded-lg border border-blue-400 group-hover:border-blue-500">
         <img
           className="w-full h-60 object-cover group-hover:scale-110 duration-300 cursor-pointer"
           src={src}
           alt="src"
         />
       </div>
-      <div className="w-full mt-5 flex flex-col  gap-6">
+      <div className="w-full mt-5 flex flex-col gap-6">
         <div>
           <div className="flex items-center justify-between">
             <h3 className="text-base uppercase text-designColor font-normal">
@@ -20,12 +20,14 @@ const ProjectsCard = ({ title,src,githubLink,websiteLink }) => {
             </h3>
             <div className="flex gap-2">
               <span className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
-              <a href={githubLink} target="_blank" rel="noopener noreferrer">
-                <BsGithub /></a>
+                <a href={githubLink} target="_blank" rel="noopener noreferrer">
+                  <BsGithub className='w-6 h-6 text-white-500'/>
+                </a>
               </span>
               <span className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
-              <a href={websiteLink} target="_blank" rel="noopener noreferrer">
-                <FaGlobe /></a>
+                <a href={websiteLink} target="_blank" rel="noopener noreferrer">
+                  <FaGlobe className='w-6 h-6 text-blue-500'/>
+                </a>
               </span>
             </div>
           </div>
@@ -33,6 +35,6 @@ const ProjectsCard = ({ title,src,githubLink,websiteLink }) => {
       </div>
     </div>
   );
-}
+};
 
-export default ProjectsCard
+export default ProjectsCard;

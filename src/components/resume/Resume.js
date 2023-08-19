@@ -3,7 +3,7 @@ import Title from '../layouts/Title';
 import Education from './Education';
 import Achievement from './Achievement';
 import Experience from "./Experience"
-
+import Resumedoc from './Resumedoc';
 const Resume = () => {
    const [educationData, setEducationData] = useState(true);
    const [experienceData, setExperienceData] = useState(false);
@@ -62,6 +62,7 @@ const Resume = () => {
       {educationData && <Education />}
       {achievementData && <Achievement />}
       {experienceData && <Experience />}
+      <Resumedoc/>
     </section>
   );
 }

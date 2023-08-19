@@ -34,7 +34,7 @@ const ContactLeft = () => {
             <SiGithub /></a>
           </span>
           <span className="bannerIcon">
-          <a href="jagadeeshm778@gmail.com">
+          <a href="mailto:jagadeeshm778@gmail.com">
             <SiGmail /></a>
           </span>
           <span className="bannerIcon">
