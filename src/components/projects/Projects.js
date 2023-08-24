@@ -2,7 +2,7 @@ import React from 'react'
 import Title from '../layouts/Title'
 import { projectOne, projectTwo, projectThree, projectSix, projectFive, projectFour} from "../../assets/index";
 import ProjectsCard from './ProjectsCard';
-import {Accordion,AccordionIcon,AccordionButton,AccordionPanel,AccordionItem,Box,Button,Center} from "@chakra-ui/react"
+import {Accordion,AccordionIcon,AccordionButton,AccordionPanel,AccordionItem,Box,Center} from "@chakra-ui/react"
 const Projects = () => {
   return (
     <section
