@@ -56,7 +56,7 @@ const Resume = () => {
             }
             className={`${
               achievementData
-                ? "border-designColor rounded-lg"
+                ? "border-designColor rounded-lg background-red"
                 : "border-transparent"
             } resumeLi`}
           >

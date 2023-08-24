@@ -52,22 +52,22 @@ const Contact = () => {
       <div className="w-full">
         <div className="w-full h-auto flex flex-col lgl:flex-row justify-between">
           <ContactLeft />
-          <div className="w-full lgl:w-[60%] h-full py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] flex flex-col gap-8 p-4 lgl:p-8 rounded-lg ">
+          <div className="w-full lgl:w-[60%] h-full bg-[#0C356A] flex flex-col gap-8 p-4 lgl:p-8 rounded-lg ">
             <form className="w-full flex flex-col gap-4 lgl:gap-6 py-2 lgl:py-5">
               {errMsg && (
-                <p className="py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b]  text-center text-orange-500 text-base tracking-wide animate-bounce">
+                <p className="py-3   text-center text-orange-500 text-base tracking-wide animate-bounce">
                   {errMsg}
                 </p>
               )}
               {successMsg && (
-                <p className="py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] text-center text-green-500 text-base tracking-wide animate-bounce">
+                <p className="py-3  text-center text-green-500 text-base tracking-wide animate-bounce">
                   {successMsg}
                 </p>
               )}
               <div className="w-full flex flex-col lgl:flex-row gap-10">
                 <div className="w-full lgl:w-1/2 flex flex-col gap-4">
-                  <p className="text-sm text-gray-400 uppercase tracking-wide">
-                    Your name
+                  <p className="text-md text-Yellow-800uppercase tracking-wide">
+                      YOUR NAME
                   </p>
                   <input placeholder='enter your name'
                     onChange={(e) => setUsername(e.target.value)}
@@ -80,13 +80,14 @@ const Contact = () => {
                   />
                 </div>
                 <div className="w-full lgl:w-1/2 flex flex-col gap-4">
-                  <p className="text-sm text-gray-400 uppercase tracking-wide">
+                  <p className="text-md text-Yellow-800 uppercase tracking-wide">
                     Phone Number
                   </p>
-                  <input placeholder='Enter phone number'
+                  <input  placeholder='Enter phone number'
                     onChange={(e) => setPhoneNumber(e.target.value)}
                     value={phoneNumber}
-                    className={`${
+                    className={
+                      `${
                       errMsg === "Phone number is required!" &&
                       "outline-designColor"
                     } contactInput`}
@@ -95,7 +96,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className="flex flex-col gap-4">
-                <p className="text-sm text-gray-400 uppercase tracking-wide">
+                <p className="text-md text-Yellow-800 uppercase tracking-wide">
                   Email
                 </p>
                 <input placeholder='enter email'
@@ -109,7 +110,7 @@ const Contact = () => {
                 />
               </div>
               <div className="flex flex-col gap-4">
-                <p className="text-sm text-gray-400 uppercase tracking-wide">
+                <p className="text-md text-Yellow-800 uppercase tracking-wide">
                   Message
                 </p>
                 <textarea placeholder='Description should less than 1000 words'
@@ -125,18 +126,18 @@ const Contact = () => {
               <div className="w-full">
                 <button
                   onClick={handleSend}
-                  className="w-full h-12 bg-[#141518] rounded-lg text-base text-gray-400 tracking-wider uppercase hover:text-white duration-300 hover:border-[1px] hover:border-designColor border-transparent"
+                  className="w-full h-12 bg-red-300 rounded-lg text-base text-gray-900 tracking-wider uppercase duration-300 hover:border-[1px]  border-transparent"
                 >
                   Send Message
                 </button>
               </div>
               {errMsg && (
-                <p className="py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne text-center text-orange-500 text-base tracking-wide animate-bounce">
+                <p className="py-3 text-center text-orange-500 text-base tracking-wide animate-bounce">
                   {errMsg}
                 </p>
               )}
               {successMsg && (
-                <p className="py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne text-center text-green-500 text-base tracking-wide animate-bounce">
+                <p className="py-3  text-center text-green-500 text-base tracking-wide animate-bounce">
                   {successMsg}
                 </p>
               )}
